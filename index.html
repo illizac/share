@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>赞赞商家红包</title>
+	<link href="http://pay.zanzanmd.cn/resources/weui/weui.min.css" rel="stylesheet" type="text/css">
+</head>
+<body id = 'body'>
+
+	<div id='wechat' style="display: none;">
+		<div id="loadingToast">
+	        <div class="weui-mask" style="opacity: 0;"></div>
+	        <div class="weui-toast">
+	            <i class="weui-loading weui-icon_toast"></i>
+	            <p class="weui-toast__content" id="toast_msg">加载中</p>
+	        </div>
+	    </div>
+	    <div style="display: none;" id="mydailg">
+	        <div class="weui-mask"></div>
+	        <div class="weui-dialog">
+	            <div class="weui-dialog__hd"><strong class="weui-dialog__title" id=""></strong></div>
+	            <div class="weui-dialog__bd"></div>
+	            <div class="weui-dialog__ft">
+	                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- 支付成功-->
+	    <div id="toastsuccess" style="display: none;">
+	        <div class="weui-mask_transparent"></div>
+	        <div class="weui-toast">
+	            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+	            <p class="weui-toast__content">已完成</p>
+	        </div>
+	    </div>
+
+		<div class='wrapper'>
+			<div class='banner'></div>
+			<div class="container">
+				<div class="content">
+					<p id='discountAmount'><span>¥</span>0</p>
+					<div class="cardmess">
+						<p>分享<span id='couponType'>优惠券</span></p>
+						<p id='fullContainer'>满 <span id='fullAmount'>0</span> 元可用</p>
+						<p><span id='deadline'>0000-00-00</span> 过期</p>
+					</div>
+					<div class='button' id='getBtn'>立即领取</div>
+				</div>
+				<p><span id='cpType'>优惠券</span> 由 <span id='shopName'></span> 发放</p>
+				<p>进店消费可使用</p>
+			</div>
+			<div class="tips">
+				<h4>
+					<span></span>
+					<p>活动详情</p>
+					<span></span>
+				</h4>
+				<p>1. 使用红包时的下单手机号需为抢红包时使用的手机号。</p>
+				<p>2. 发放至手机号的红包需在App用手机号注册，或将手机号鄉定至赞赞账户后才可使用。</p>
+				<p>3. 发放至赞赞账户的红包登录后即可使用。</p>
+				<p>4. 红包仅限在线支付时使用，每张订单仅限使用一张红包，红包不找零。</p>
+				<p>5. 赞赞保留法律范围内允许的对活动的解释权。</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
