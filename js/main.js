@@ -1,3 +1,4 @@
+import '../css/weui.min.css'
 import '../css/main.css'
 
 const IsWeixinOrAlipay =  _ => {
